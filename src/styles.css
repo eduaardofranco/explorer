@@ -1,0 +1,183 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+li {
+    list-style: none;
+}
+/* global css */
+:root {
+ --primary-color: #B52184;
+ --secondary-color: #312D64;
+}
+body * {
+    font-family: 'Mulish', sans-serif;
+}
+p {
+    color: var(--secondary-color);
+}
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+/* header */
+.header-container {
+    background: url(../assets/img-cover.png) no-repeat top right;
+    height: 100vh;
+    
+}
+.text-header {
+    padding-top: 20%;;
+}
+.text-header h2 {
+    color: var(--primary-color);
+    font-size: 60px;
+    font-weight: 900;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, .3));
+}
+.text-header p {
+    font-size: 32px;
+    font-weight: 600;;
+}
+.text-header a {
+    background: url('../assets/slide-down.svg') no-repeat top left/cover;
+    display: block;
+    margin-top: 200px;
+    width: 37px;
+    height: 66px;
+    -webkit-animation: bounce 1s linear infinite;
+}
+
+/* section */
+.steps {
+    background-color: var(--secondary-color);
+}
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 64px 0;
+}
+.steps-container li {
+    background-color: white;
+    border-radius: 24px;
+    padding: 32px;
+}
+.steps-container img {
+    width: 97px;
+}
+.steps-container h3 {
+    color: var(--primary-color);
+    font-size: 37px;
+    font-weight: 900;
+    margin: 40px 0 15px 0;
+}
+.steps-container p {
+    font-size: 20px;
+    font-weight: 600;;
+}
+/* contact */
+.contact {
+    background: url('/assets/bgDots.png') no-repeat top right;
+    padding: 70px 0;
+}
+.contact h2 {
+    color: var(--primary-color);
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.contact form {
+    width: 590px;
+}
+.contact form input {
+    height: 30px;
+}
+.contact form input,textarea {
+    border: 2px solid var(--secondary-color); 
+    border-radius: 16px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 40px;
+    width: 100%;
+}
+.contact form input:focus,textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.contact form input::placeholder, textarea::placeholder {
+    color: var(--secondary-color);
+}
+.contact .form-item {
+    display: block;
+    position: relative;
+}
+.contact .name {
+    background-image: url(../assets/person.svg);
+}
+.contact .email {
+    background-image: url(../assets/at.svg);
+}
+.contact .form-item label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-83%);
+}
+.contact button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 0;
+    border-radius: 16px;
+    font-size: 14px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all ease .5s ;
+}
+.contact button:hover {
+    background-color: var(--primary-color);
+}
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+footer p,a {
+    color: white;
+    font-size: 15px;
+}
+/* scroll down button animation */
+@keyframes bounce {
+    from {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0);
+      }
+  }
