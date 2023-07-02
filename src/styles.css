@@ -26,6 +26,8 @@ li {
 :root {
  --primary-color: #B52184;
  --secondary-color: #312D64;
+ --bg-header: url(../assets/img-cover.png) no-repeat top right;
+ --bg-header-mob: url(../assets/img-cover-small.png) no-repeat top right;
 }
 body * {
     font-family: 'Mulish', sans-serif;
@@ -39,7 +41,7 @@ p {
 }
 /* header */
 .header-container {
-    background: url(../assets/img-cover.png) no-repeat top right;
+    background: var(--bg-header);
     height: 100vh;
     
 }
@@ -74,6 +76,7 @@ p {
     justify-content: center;
     gap: 60px;
     padding: 64px 0;
+    flex-flow: row nowrap;
 }
 .steps-container li {
     background-color: white;
@@ -181,3 +184,73 @@ footer p,a {
         transform: translateY(0);
       }
   }
+/* @medias */
+@media (max-width: 1600px) {
+    .header-container {
+        background: var(--bg-header-mob);
+    }
+}
+@media (max-width: 1400px) {
+    .header-container {
+        height: 70vh;
+    }
+    .header-container h2 {
+        font-size: 40px;
+    }
+    .header-container p {
+        font-size: 30px;
+    }
+    .steps-container {
+        flex-wrap: wrap;
+    }
+    .steps-container li {
+        flex-basis: 40%;
+    }
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 1100px) {
+    .steps-container li {
+        flex-basis: 70%;
+    }
+    .container {
+        width: 90%;
+    }
+    .header-container{
+        background-position: top center;
+    }
+    .header-container .text-header {
+        padding-top: 400px;
+        text-align: center;
+    }
+    .header-container h2 {
+        font-size: 32px;
+    }
+    .header-container p {
+        font-size: 20px;
+    }
+    .header-container a {
+        display: inline-block;
+        margin-top: 30px;
+    }
+    .contact {
+        background-image: none;
+    }
+}
+@media (max-width: 1100px) {
+    .steps-container h3 {
+        font-size: 29px;
+    }
+    .steps-container p {
+        font-size: 16px;
+    }
+    .contact h2 {
+        font-size: 32px;
+    }
+}
+@media (max-width: 1100px) {
+    .contact form{
+        width: 90%;
+    }
+}
