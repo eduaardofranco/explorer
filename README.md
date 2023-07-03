@@ -1,7 +1,7 @@
 
 ![Explorer](https://github.com/eduaardofranco/explorer/blob/main/assets/img-cover-small.png?raw=true)
 # Explorer Program
-This project was created as part of the studies with [RocketSeat](rocketseat.com.br)
+This project was created as part of the studies with [RocketSeat](https://rocketseat.com.br)
 
 ## What is inside?
 - html
